@@ -51,7 +51,7 @@ app.layout = html.Div(
                             children=html.Div(["Arrastra o selecciona un archivo CSV/Excel"]),
                             className="upload-box"
                         ),
-                        html.Div("O usa el archivo de ejemplo: data/ejemplo.csv", className="nota"),
+                        html.Div("O usa el archivo de ejemplo: ejemplo.csv", className="nota"),
 
                         html.Hr(),
                         html.H3("⚙️ Configuración del gráfico"),
@@ -757,4 +757,5 @@ def actualizar_tema_normalidad(theme_class, current_fig, current_text):
 
 
 if __name__ == '__main__':
+
     app.run_server(host="0.0.0.0", port=8050)
