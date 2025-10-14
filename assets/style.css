@@ -1,0 +1,349 @@
+/* ======= ESTILOS GENERALES ======= */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* ======= ENCABEZADO ======= */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #002855;
+    color: white;
+    padding: 10px 20px;
+    border-bottom: 3px solid #d4af37;
+}
+
+.header img {
+    height: 100px;
+}
+
+.titulo-container {
+    text-align: center;
+    flex: 1;
+}
+
+.titulo-principal {
+    font-size: 28px;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.subtitulo {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 400;
+    color: #e5e5e5;
+}
+
+.theme-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ======= LÍNEA DORADA ======= */
+.gold-line {
+    height: 2px;
+    background-color: #dab023;
+}
+
+/* ======= CONTENEDOR PRINCIPAL ======= */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* ======= SIDEBAR ======= */
+.sidebar {
+    flex: 1 1 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 10px;
+}
+
+.upload-box {
+    background-color: #f2f2f2;
+    border: 2px dashed #bbb;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-box:hover {
+    background-color: #e8e8e8;
+}
+
+.dropdown, .input {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.btn-accion {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-accion:hover {
+    background-color: #00347a;
+}
+
+.info {
+    font-size: 13px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* ======= CONTENIDO PRINCIPAL ======= */
+.contenido {
+    flex: 3 1 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.indicadores {
+    margin-top: 20px;
+}
+
+.alertas {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* ======= MODO OSCURO ======= */
+
+.modo-oscuro {
+    background-color: #1b1b1b !important;
+    color: #e0e0e0 !important;
+}
+
+.modo-oscuro .header {
+    background-color: #00112c !important;
+    color: white;
+}
+
+.modo-oscuro .sidebar,
+.modo-oscuro .contenido {
+    background-color: #252525 !important;
+    color: #e0e0e0 !important;
+    box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+}
+
+/* ======= MODO OSCURO EXTENDIDO ======= */
+.modo-oscuro body {
+    background-color: #1b1b1b !important;
+    color: #e0e0e0 !important;
+}
+
+.modo-oscuro .sidebar,
+.modo-oscuro .contenido {
+    background-color: #252525 !important;
+    color: #e0e0e0 !important;
+    box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+}
+
+/* Cuadro de carga de datos */
+.modo-oscuro .upload-box {
+    background-color: #434242 !important;
+    border: 2px dashed #666 !important;
+    color: #e0e0e0 !important;
+}
+.modo-oscuro .upload-box:hover {
+    background-color: #383838 !important;
+}
+
+/* Dropdown y campos de entrada */
+.modo-oscuro .dropdown select,
+.modo-oscuro .input {
+    background-color: #535252 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #555 !important;
+}
+
+/* Botones */
+.modo-oscuro .btn-accion {
+    background-color: #d4af37 !important; /* dorado */
+    color: #1b1b1b !important;
+}
+.modo-oscuro .btn-accion:hover {
+    background-color: #b89425 !important;
+}
+
+/* Texto informativo */
+.modo-oscuro .info {
+    color: #cccccc !important;
+}
+
+/* Checklist */
+.modo-oscuro .checklist label {
+    color: #e0e0e0 !important;
+}
+
+/* Líneas divisorias */
+.modo-oscuro hr {
+    border-color: #ffdd0084 !important;
+}
+
+/* Tabla de previsualización */
+.modo-oscuro .dash-table-container {
+    background-color: #1b1b1b !important;
+    color: #e0e0e0 !important;
+}
+.modo-oscuro .dash-table-container .dash-cell {
+    background-color: #2b2b2b !important;
+    color: #e0e0e0 !important;
+}
+.modo-oscuro .dash-table-container .dash-header {
+    background-color: #333 !important;
+    color: #f0f0f0 !important;
+}
+
+
+/* ======= DROPDOWN (tipo de gráfico) ======= */
+.Select-control,
+.Select-menu-outer {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.Select-control:hover {
+    border-color: #999;
+}
+
+/* === Modo oscuro === */
+.modo-oscuro .Select-control,
+.modo-oscuro .Select-menu-outer {
+    background-color: #2b2b2b !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #666 !important;
+}
+
+.modo-oscuro .Select-control:hover {
+    border-color: #999 !important;
+}
+
+/* Texto dentro del dropdown */
+.modo-oscuro .Select-value-label,
+.modo-oscuro .Select-placeholder {
+    color: #e0e0e0 !important;
+}
+
+/* Opciones del menú */
+.modo-oscuro .VirtualizedSelectOption {
+    background-color: #2b2b2b !important;
+    color: #e0e0e0 !important;
+}
+.modo-oscuro .VirtualizedSelectFocusedOption {
+    background-color: #3b3b3b !important;
+    color: #ffffff !important;
+}
+
+#grafico-normalidad {
+    max-width: 700px;
+    margin: 20px auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+}
+.bloque-analisis table td, .bloque-analisis table th {
+    padding: 6px 8px;
+    border: 1px solid #ddd;
+}
+.modo-oscuro .bloque-analisis table {
+    background: #252525;
+    color: #e0e0e0;
+}
+
+
+/* ======= BLOQUE RESUMEN (estilo tipo Minitab) ======= */
+.titulo-resumen {
+    text-align: center;
+    color: #22006a;
+    margin-bottom: 10px;
+}
+
+.modo-oscuro .titulo-resumen {
+    color: #e0e0e0 !important;
+}
+
+.tabla-resumen {
+    width: 65%;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.622);
+}
+
+.tabla-resumen td, 
+.tabla-resumen th {
+    padding: 6px 8px;
+    border: 1px solid #ddd;
+}
+
+.modo-oscuro .tabla-resumen {
+    border-color: #666 !important;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.05) !important;
+}
+
+.modo-oscuro .tabla-resumen td, 
+.modo-oscuro .tabla-resumen th {
+    border: 1px solid #555 !important;
+    color: #e0e0e0 !important;
+}
+
+/* ======= MENSAJE INTERPRETATIVO ======= */
+.interpretacion {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+/* ======= COLORES DINÁMICOS SEGÚN RESULTADO ======= */
+.interpretacion-green {
+  color: #2ecc71; /* verde: capaz */
+}
+
+.interpretacion-orange {
+  color: #e67e22; /* naranja: marginal */
+}
+
+.interpretacion-red {
+  color: #e74c3c; /* rojo: no capaz */
+}
+
+/* ======= MODO OSCURO ======= */
+.modo-oscuro .interpretacion-green {
+  color: #27ae60; /* verde oscuro */
+}
+
+.modo-oscuro .interpretacion-orange {
+  color: #f39c12; /* naranja brillante */
+}
+
+.modo-oscuro .interpretacion-red {
+  color: #ff6b6b; /* rojo más visible */
+}
