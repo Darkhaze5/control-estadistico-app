@@ -24,7 +24,7 @@ app.layout = html.Div(
                 html.Img(src="/assets/logo_unimag.png", className="logo", height='80px'),
                 html.Div(
                     [
-                        html.H1("UNIVERSIDAD DEL MAGDALENA", className="titulo-principal"),
+                        html.H1("UNIVERSIDAD DEL MAGDALENA hasta que me pagen", className="titulo-principal"),
                         html.H2("Facultad de Ingeniería Industrial – Control Estadístico de Procesos", className="subtitulo")
                     ],
                     className="titulo-container"
@@ -759,3 +759,4 @@ def actualizar_tema_normalidad(theme_class, current_fig, current_text):
 if __name__ == '__main__':
 
     app.run_server(host="0.0.0.0", port=8050)
+
