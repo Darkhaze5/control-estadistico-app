@@ -10,7 +10,7 @@ from scipy.stats import norm, shapiro
 
 # App
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
-app.title ="shadowy statesman"
+app.title ="GraficApp"
 server = app.server
 
 app.layout = html.Div(
@@ -760,6 +760,7 @@ def actualizar_tema_normalidad(theme_class, current_fig, current_text):
 if __name__ == '__main__':
 
     app.run_server(host="0.0.0.0", port=8050)
+
 
 
 
